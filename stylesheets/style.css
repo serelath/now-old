@@ -1,0 +1,403 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+    overflow-x: hidden;
+	text-rendering: optimizeLegibility;
+}
+/* TEXT */
+/*=======================*/
+h1 {
+    font-weight: 400 !important;
+    color: #77939f !important;
+    font-size: 60px !important;
+    margin-top: -5px !important;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+    
+}
+h2, h3 {
+    color: #858585 !important;
+    font-weight: 300 !important;
+}
+h2 {
+    letter-spacing: 4px;
+    font-size: 36px !important;
+    margin-top: -5px !important;
+}
+h3 {
+    letter-spacing: 2px;
+    font-size: 24px !important;
+}
+.black {
+    color: #434348 !important;
+}
+.blue-bold {
+        color: #77939f !important;
+        font-weight: 500 !important;
+        letter-spacing: 2px !important;
+    }
+p {
+    color: #434348 !important;
+    letter-spacing: 0.25px;
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    line-height: 1.7;
+}
+
+/* KEYFRAMES */
+/*=======================*/
+@keyframes float {
+    0% {transform: rotate(90deg) translate(1px, -10px);}
+    100% {transform: rotate(90deg) translate(4px, -10px);}
+}
+@keyframes fade-left {
+    0% {opacity: 0;
+        transform: translateX(5%);
+        }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fade-right {
+    0% {display: none;
+        }
+    1% {display: block !important;
+        opacity: 0;
+        transform: translateX(-5%);
+    }
+    4%, 28% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    32% {
+        opacity: 0;
+        transform: translateX(-5%);
+    }
+    33% {
+        display: none;
+    }
+}
+
+/* LOGO/HEADER */
+/*=======================*/
+#navbar {
+    z-index: 2;
+}
+#logo img{
+    width: 200px; 
+    margin-top: 15px;
+    z-index: 2;
+}
+.logo-scroll {
+    margin-top: -100px !important;
+}
+#logo-sm img{
+    position: absolute;
+    width: 100px;
+    opacity: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    margin-top: -2px;
+}
+.logo-sm-scroll {
+    padding-top: 5px;
+    opacity: 1 !important;
+}
+/* NAVBAR */
+/*=======================*/
+#blue-nav {
+    background-color: white;
+    height: 5px;
+    transition: 0.1s;
+}
+.blue-nav {
+    background-color: #77939f !important;
+}
+nav {
+    padding-top: 5px !important;
+}
+.nav-scroll {
+    padding-top: 12px !important;
+}
+li {
+    padding: 10px;
+    margin: 0 5px;
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+    color: #434348;
+    font-size: 16px;
+    letter-spacing: 0.25px;
+    font-weight: 400;
+    position: relative;
+}
+li a:visited {
+    color: #434348;
+}
+li a:hover {
+    text-decoration: none;
+}
+.underline {
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: #77939f;
+    transition: 0.5s ease-in-out;
+}
+
+
+/* SECTIONS */
+/*=======================*/
+section {
+    display: block;
+    width: 100vw;
+    background-color: #ece9e5;
+    padding: 50px 0;
+}
+
+/* HOME */
+/*=======================*/
+#home.row {
+}
+#home {
+    padding: 250px 0 0 0;
+    height: 100vh;
+    overflow-y: hidden;
+}
+#home-bg {
+    background: center / cover url("../images/home-bg.jpg");
+    height: 60vh;
+    position: relative;
+}
+#home-bg div:first-child {
+    background: center / cover url("../images/home-paint-one.png");
+    height: 110px;
+    width: 100%;
+    transform: translateY(-1px);
+}
+#home-bg div:nth-child(2) {
+    background: center / cover url("../images/home-paint-two.png");
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+}
+
+    /* ANIMATED BANNER */
+    #slogan {
+        opacity: 0;
+        animation: fade-left 1s forwards;
+    }
+    a.banner {
+        color: #858585 !important;
+        transition: 0.5s;
+        position: relative;
+        font-size: 18px !important;
+        font-weight: 300 !important;
+    }
+    a.banner:hover {
+        text-decoration: none;
+        color: #77939f !important;
+    }
+    .arrow {
+        transform: rotate(90deg) translate(5px, -10px);
+        display: inline-block;
+        letter-spacing: 2px;
+        position: relative;
+        animation: float 1.8s infinite alternate linear;
+    }
+    /* ANIMATE */
+    .home-banner {
+        left: 0;
+        top: 0;
+        position: absolute;
+        animation: fade-right 24s infinite;
+    }
+    .home-banner:first-child {
+        position: relative !important;
+        opacity: 0;
+        animation-delay: 0.25s;
+    }
+    .home-banner:nth-child(2) {
+        opacity: 0;
+        animation-delay: 8s;
+    }
+    .home-banner:nth-child(3) {
+        opacity: 0;
+        animation-delay: 16s;
+    }
+
+/* PRODUCTS */
+/*=======================*/
+
+
+/* OUR MISSION */
+/*=======================*/
+video {
+    width: 100%;
+}
+#donate-amount {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+#donate-amount div {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    border: 2px solid #77939f;
+    margin-left: -2px;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+}
+#donate-amount h3 {
+    margin-bottom: 0;
+    color: #77939f !important;
+}
+#donate-amount div:hover {
+    background-color: #77939f;
+}
+#donate-amount div:hover h3 {
+    color: #ece9e5 !important;
+}
+#donate-amount div:hover .set-amount {
+    border-bottom: 2px solid #ece9e5;
+}
+
+    /* DONATE BTN */
+#donate-box button {
+    border: 2px solid #77939f;
+    font-weight: 400 !important;
+    background-color: #77939f;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+} 
+#donate-box button h3 {
+    color: white !important;
+    padding: 10px;
+    margin-bottom: 0;
+}
+#donate-box button:hover {
+    background-color: #ece9e5;
+} 
+#donate-box button:hover h3 {
+    color: #77939f !important;
+} 
+
+    /* INPUT */
+    .set-amount {
+        width: 50%;
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid #77939f;
+        text-align: center;
+        font-weight: 300 !important;
+        font-size: 24px !important;
+        color: #77939f !important;
+    }
+    #checkbox{
+        display: inline-flex;
+        justify-content: center;
+    }
+    input[type="checkbox"] {
+        -webkit-appearance:none;
+        width: 25px;
+        height: 25px;
+        border: 1px solid #77939f;
+        position: relative;
+        top: 2px;
+        right: 5px;
+        padding: 5px;
+        transition: 0.3s;
+        color: white;
+    }
+    input[type=checkbox]::before {
+      content: "✔";
+      position: absolute;
+      font-size: 16px;
+      top: 48%;   
+        left: 50%;
+        transform: translate(-50%, -50%);
+      visibility: hidden;
+    }
+    input[type=checkbox]:checked::before {
+      /* Use `visibility` instead of `display` to avoid recalculating layout */
+      visibility: visible;
+    }
+    input[type='checkbox']:checked {
+        background: #77939f;
+    }
+
+/* SCROLLBAR */
+/*=======================*/
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #858585; 
+}
+
+/* MEDIA QUERY */
+/*=======================*/
+
+/* X LARGE */
+/*=======================*/
+@media only screen  and (min-width : 1824px) {
+    .container {
+        max-width: 1600px !important;
+    }
+}
+
+/* MEDIUM */
+/*=======================*/
+@media only screen and (max-width : 768px) {
+    #home {
+        padding: 125px 0 0 0 !important;
+    }
+    
+    /* NAVBAR */
+    #logo img {
+        display: none;
+    }
+    #logo-sm img {
+        width: 100px;
+        opacity: 1;
+        margin-top: 0;
+    }
+    #navbar {
+        position: fixed !important;
+    }
+    #blue-nav {
+        background-color: #77939f !important;
+    }
+    .navbar-toggler-icon {
+        position: absolute
+    }
+}
+
+/* SMALL */
+/*=======================*/
+@media only screen and (max-width : 576px) {
+    /* HOME */
+    #home-bg {
+        min-height: 200px;
+    }
+    #home-bg div {
+        height: 50px !important;
+    }
+}
