@@ -448,12 +448,32 @@ input[type="textbox"], textarea {
 }
 button#subscribe {
     background-color: transparent!important;
+    transition: 0.5s;
 }
 button#subscribe h3 {
     color: #77939f !important;
+    transition: 0.5s;
+}
+button#subscribe:hover {
+    background-color: #77939f !important;
+}
+button#subscribe:hover h3 {
+    color: #ece9e5 !important;
 }
 #footer input[type="textbox"] {
     color: #ece9e5 !important;
+}
+.fa {
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #77939f;
+    color: #77939f;
+}
+.fa-instagram {
+    padding: 9px 0 11px 0;
 }
 
 /* SCROLLBAR */
