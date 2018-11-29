@@ -320,7 +320,7 @@ video {
 }
 
     /* DONATE BTN */
-    #donate-box button {
+    #donate-box button, .button {
         border: 2px solid #77939f;
         font-weight: 400 !important;
         background-color: #77939f;
@@ -328,15 +328,15 @@ video {
         cursor: pointer;
         transition: 0.5s;
     } 
-    #donate-box button h3 {
+    #donate-box button h3, .button {
         color: white !important;
         padding: 10px;
         margin-bottom: 0;
     }
-    #donate-box button:hover {
-        background-color: #ece9e5;
+    #donate-box button:hover, .button {
+        background-color: #ece9e5 !important;
     } 
-    #donate-box button:hover h3 {
+    #donate-box button:hover h3, .button {
         color: #77939f !important;
     } 
 
@@ -400,9 +400,6 @@ video {
 
 /* CONTACT */
 /*=======================*/
-#contact {
-    background-color: #f3f1ef;
-}
 .sponsors {
     height: 433px;
     background-color: black;
@@ -439,6 +436,25 @@ input[type="textbox"], textarea {
     .contact-form button:hover h3 {
         color: #77939f !important;
     } 
+
+/* FOOTER */
+/*=======================*/
+#footer {
+    background-color: #434348 !important;
+}
+#footer h1, #footer h2, #footer p {
+    color: #ece9e5 !important;
+    font-weight: 400 !important;
+}
+button#subscribe {
+    background-color: transparent!important;
+}
+button#subscribe h3 {
+    color: #77939f !important;
+}
+#footer input[type="textbox"] {
+    color: #ece9e5 !important;
+}
 
 /* SCROLLBAR */
 /*=======================*/
