@@ -109,7 +109,6 @@ p {
     opacity: 0;
     transform: translateY(-50%);
     top: 50%;
-    margin-top: -2px;
 }
 .logo-sm-scroll {
     padding-top: 5px;
@@ -237,10 +236,6 @@ section {
 /*=======================*/
 #products {
     background-color: #f3f1ef;
-    background-image: url('../images/product-paint.png');
-    background-repeat: no-repeat;
-    background-position: -50px 225px;
-    background-size: 125%;
 }
 .nav-tabs {
     border: none !important;
@@ -391,6 +386,60 @@ video {
         background: #77939f;
     }
 
+/* BUSINESS */
+/*=======================*/
+#business {
+    background-color: #77939f;
+}
+#business h1, #business h2 {
+    color: #ece9e5 !important;
+}
+#business a, .white {
+    color: white !important;
+}
+
+/* CONTACT */
+/*=======================*/
+#contact {
+    background-color: #f3f1ef;
+}
+.sponsors {
+    height: 433px;
+    background-color: black;
+}
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+input[type="textbox"], textarea {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #77939f;
+    font-weight: 300 !important;
+    font-size: 18px !important;
+    color: #434348 !important;
+    padding: 5px;
+}
+.contact-form button {
+        border: 2px solid #77939f;
+        font-weight: 400 !important;
+        background-color: #77939f;
+        width: 100%;
+        cursor: pointer;
+        transition: 0.5s;
+    } 
+    .contact-form button h3 {
+        color: white !important;
+        padding: 10px;
+        margin-bottom: 0;
+    }
+    .contact-form button:hover {
+        background-color: #ece9e5;
+    } 
+    .contact-form button:hover h3 {
+        color: #77939f !important;
+    } 
+
 /* SCROLLBAR */
 /*=======================*/
 ::-webkit-scrollbar {
@@ -420,7 +469,7 @@ video {
 /* LARGE */
 /*=======================*/
 @media only screen and (min-width: 992px) {
-    /* PRODUCTS */
+
 }
 
 /* MEDIUM */
@@ -437,7 +486,6 @@ video {
     #logo-sm img {
         width: 100px;
         opacity: 1;
-        margin-top: 0;
     }
     #navbar {
         position: fixed !important;
@@ -457,13 +505,17 @@ video {
         height: 27vw;
         margin: 4vw;
     }
+    /* CONTACT */
+        .sponsors {
+        height: 300px;
+    }
 }
 
 /* SMALL */
 /*=======================*/
 @media only screen and (max-width : 576px) {
     section {
-        padding: 50px 0 0 0;
+        padding: 75px 0 50px 0;
     }
     /* HOME */
     #home-bg {
@@ -476,5 +528,9 @@ video {
         width: 40vw;
         height: 40vw;
         margin: 2.5vw;
+    }
+    /* CONTACT */
+        .sponsors {
+        height: 250px;
     }
 }
