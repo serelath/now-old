@@ -441,6 +441,7 @@ input[type="textbox"], textarea {
 /*=======================*/
 #footer {
     background-color: #434348 !important;
+    padding-bottom: 0 !important; 
 }
 #footer h1, #footer h2, #footer p {
     color: #ece9e5 !important;
@@ -465,15 +466,30 @@ button#subscribe:hover h3 {
 }
 .fa {
     padding: 10px;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     text-align: center;
     border-radius: 50%;
     border: 1px solid #77939f;
-    color: #77939f;
+    color: #77939f !important;
+    text-decoration: none !important;
+    transition: 0.3s;
 }
 .fa-instagram {
     padding: 9px 0 11px 0;
+}
+.fa:hover {
+    color: #ece9e5 !important;
+    border: 1px solid #ece9e5;
+}
+#footer-links a {
+    color: #77939f !important;
+}
+#footer-links p {
+    font-weight: 300 !important;
+}
+p#copy {
+    color: #858585 !important;
 }
 
 /* SCROLLBAR */
@@ -545,6 +561,11 @@ button#subscribe:hover h3 {
         .sponsors {
         height: 300px;
     }
+    
+    /* FOOTER */
+    .terms {
+        justify-content: center;
+    }
 }
 
 /* SMALL */
@@ -569,4 +590,5 @@ button#subscribe:hover h3 {
         .sponsors {
         height: 250px;
     }
+}
 }
