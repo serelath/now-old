@@ -89,6 +89,25 @@ p {
         display: none;
     }
 }
+@keyframes bannerLeaf {
+    0% {top: 0; opacity: 1}
+    45% {top:0}
+    50% {top: -100%; opacity: 1}
+    51% {opacity: 0}
+    52% {top: 100%;}
+    90% {top: 100%; opacity: 1}
+    95% {top: 0;}
+}
+@keyframes bannerBiotrem {
+    0% {top: 0; opacity: 1}
+    45% {top:0}
+    50% {top: -100%; opacity: 1}
+    90% {top: -100%; opacity: 1}
+    95% {top: -200%;}
+    96% {opacity: 0}
+    97% {top:0; opacity: 0}
+    98% {opacity: 1}
+}
 
 /* LOGO/HEADER */
 /*=======================*/
@@ -403,6 +422,41 @@ video {
 .sponsors {
     height: 433px;
     background-color: black;
+    overflow: hidden;
+}
+.sponsors > .sponsors-banner {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.leaf {
+    animation: bannerLeaf 16s infinite;
+}
+.biotrem {
+    animation: bannerBiotrem 16s infinite;
+}
+.sponsors > .sponsors-banner img, .sponsors > .sponsors-banner p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sponsors > .sponsors-banner p {
+    color: white !important;
+    text-shadow: 0 4px 4px rgba(0,0,0, 0.5);
+    font-weight: 400 !important;
+    top: 210px;
+}
+.biotrem img {
+    top: 80px !important;
+}
+.leaf img {
+    top: 125px !important;
+}
+.sponsors > .leaf {
+    background: url('../images/sponsor-one.jpg') -200px -350px;
+}
+.sponsors > .biotrem {
+    background: url('../images/sponsor-two.jpg') -100px -25px;
 }
 .name {
     display: flex;
@@ -556,10 +610,6 @@ p#copy {
         width: 27vw;
         height: 27vw;
         margin: 4vw;
-    }
-    /* CONTACT */
-        .sponsors {
-        height: 300px;
     }
     
     /* FOOTER */
