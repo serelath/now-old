@@ -637,8 +637,15 @@ p#copy {
         margin: 2.5vw;
     }
     /* CONTACT */
-        .sponsors {
-        height: 250px;
+    .sponsors {
+        height: 200px;
+    }
+    .sponsors > .sponsors-banner img {
+        top: 50% !important;
+        transform: translate(-50%, -52%) !important;
+    }
+    .sponsors > .sponsors-banner p {
+        display: none;
     }
 }
 }
