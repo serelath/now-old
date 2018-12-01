@@ -589,12 +589,6 @@ p#copy {
 /* X LARGE */
 /*=======================*/
 @media only screen  and (min-width : 1824px) {
-    /* PRODUCTS */
-    .shop-listing img {
-        width: 250px;
-        height: 250px;
-        margin: 20px;
-    }
 }
 
 /* LARGE */
