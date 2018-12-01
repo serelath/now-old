@@ -441,7 +441,7 @@ video {
     display: none;
 }
 .b3 {
-    display: block;
+    display: inline-block;
 }
 
 /* CONTACT */
@@ -602,7 +602,9 @@ p#copy {
 /* LARGE */
 /*=======================*/
 @media only screen and (min-width: 992px) {
-
+    .b1 {
+        display: none;
+    }
 }
 
 /* MEDIUM */
