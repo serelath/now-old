@@ -589,7 +589,15 @@ p#copy {
 /* X LARGE */
 /*=======================*/
 @media only screen  and (min-width : 1824px) {
+    .shop-listing img {
+    width: calc(53px + 7.5vw);
+    height: calc(53px + 7.5vw);
+    background-color: blue;
+    margin: 15px;
+    transition: 0.5s;
 }
+}
+
 
 /* LARGE */
 /*=======================*/
