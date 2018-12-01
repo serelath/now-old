@@ -80,10 +80,12 @@ p {
     4%, 31% {
         opacity: 1;
         transform: translateX(0);
+        z-index: 3;
     }
     35% {
         opacity: 0;
         transform: translateX(-5%);
+        z-index: 1;
     }
     36% {
         display: none;
@@ -625,8 +627,11 @@ p#copy {
         padding: 75px 0 50px 0;
     }
     /* HOME */
+    #home {
+        height: auto;
+    }
     #home-bg {
-        min-height: 200px;
+        display: none;
     }
     #home-bg div {
         height: 50px !important;
