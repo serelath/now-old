@@ -590,21 +590,18 @@ p#copy {
 /*=======================*/
 @media only screen  and (min-width : 1824px) {
     .shop-listing img {
-    width: calc(75px + 6.5vw);
-    height: calc(75px + 6.5vw);
-    background-color: blue;
-    margin: 15px;
-    transition: 0.5s;
-}
+        width: calc(85px + 6.5vw);
+        height: calc(85px + 6.5vw);
+        background-color: blue;
+        margin: 15px;
+        transition: 0.5s;
+    }
 }
 
 
 /* LARGE */
 /*=======================*/
 @media only screen and (min-width: 992px) {
-    .b1 {
-        display: none;
-    }
 }
 
 /* MEDIUM */
