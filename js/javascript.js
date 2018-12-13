@@ -30,6 +30,12 @@ $(document).ready(function(){
     });
     
     //side-nav
+    $(document).click(function() {
+        $('.navbar-nav').addClass('nav-close').removeClass('nav-open');  
+    })
+    $('.fa-bars, .navbar-nav').click(function(e) {
+       e.stopPropagation(); 
+    });
     $('.fa-bars').click(function(){
         $(this).siblings('.navbar-nav').addClass('nav-open').removeClass('close-nav');
    });
