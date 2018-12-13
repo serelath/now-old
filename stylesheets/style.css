@@ -54,11 +54,18 @@ p {
     font-weight: 300 !important;
     line-height: 1.7;
 }
+#big-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 #big-text h1, #big-text h2 {
-    color: white !important;
+    color: #f6f5f4 !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 .big-text {
-    font-size: 150px !important;
+    font-size: 140px !important;
     line-height: 0.9;
 }
 .ls-short {
@@ -70,15 +77,6 @@ p {
 @keyframes float {
     0% {transform: rotate(90deg) translate(1px, -10px);}
     100% {transform: rotate(90deg) translate(4px, -10px);}
-}
-@keyframes fade-left {
-    0% {opacity: 0;
-        transform: translateX(5%);
-        }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
 }
 @keyframes fade-right {
     0% {display: none;
@@ -191,12 +189,17 @@ section {
 /* HOME */
 /*=======================*/
 #home {
-    overflow-y: hidden;
-    background-color: #f6f5f4;
+    overflow: hidden;
+    background-color: #ece9e5;
     padding: 50px 0;
 }
 #landing {
     background: center / cover url("../images/home-bg.jpg");
+    padding: 50px 0;
+    height: 100vh;
+}
+.edible {
+    display: none;
 }
 #home-bg div:first-child {
     background: center / cover url("../images/home-paint-one.png");
@@ -204,50 +207,25 @@ section {
     width: 100%;
     transform: translateY(-5px);
 }
-
     /* ANIMATED BANNER */
-    #slogan {
-        opacity: 0;
-        animation: fade-left 1s forwards;
-    }
-    a.banner {
-        color: #858585 !important;
-        transition: 0.5s;
-        position: relative;
-        font-size: 18px !important;
-        font-weight: 300 !important;
-    }
-    a.banner:hover {
-        text-decoration: none;
-        color: #77939f !important;
-    }
-    .arrow {
-        transform: rotate(90deg) translate(5px, -10px);
-        display: inline-block;
-        letter-spacing: 2px;
-        position: relative;
-        animation: float 1.8s infinite alternate linear;
-    }
-    /* ANIMATE */
-    .home-banner {
-        left: 0;
-        top: 0;
-        position: absolute;
-        animation: fade-right 24s infinite;
-    }
-    .home-banner:first-child {
-        position: relative !important;
-        opacity: 0;
-        animation-delay: 0.25s;
-    }
-    .home-banner:nth-child(2) {
-        opacity: 0;
-        animation-delay: 8s;
-    }
-    .home-banner:nth-child(3) {
-        opacity: 0;
-        animation-delay: 16s;
-    }
+        a.banner {
+            color: #858585 !important;
+            transition: 0.5s;
+            position: relative;
+            font-size: 18px !important;
+            font-weight: 300 !important;
+        }
+        a.banner:hover {
+            text-decoration: none;
+            color: #77939f !important;
+        }
+        .arrow {
+            transform: rotate(90deg) translate(5px, -10px);
+            display: inline-block;
+            letter-spacing: 2px;
+            position: relative;
+            animation: float 1.8s infinite alternate linear;
+        }
 
 /* PRODUCTS */
 /*=======================*/
@@ -615,6 +593,11 @@ p#copy {
 /*=======================*/
 @media only screen and (max-width: 992px) {
     
+    /*HOME*/
+    .edible {
+        display: block;
+    }
+    
     /*NAVBAR*/
     .nav-close {
         transform: translateX(100%) !important;
@@ -656,7 +639,7 @@ p#copy {
         color: #ece9e5 !!important;
     }
     #navbar li a:hover {
-        color: white !important;
+        color: #77939f !important;
     }
     .underline {
         display: none;
@@ -682,20 +665,34 @@ p#copy {
         border: none;
         background-color: transparent;
     }
+    
+    /* ANIMATE */
+        .home-banner {
+            left: 0;
+            top: 0;
+            position: absolute !important;
+            animation: fade-right 24s infinite;
+        }
+        .home-banner:first-child {
+            position: relative !important;
+            opacity: 0;
+            animation-delay: 0.25s;
+        }
+        .home-banner:nth-child(2) {
+            opacity: 0;
+            animation-delay: 8s;
+        }
+        .home-banner:nth-child(3) {
+            opacity: 0;
+            animation-delay: 16s;
+        }
 }
 
 /* MEDIUM */
 /*=======================*/
 @media only screen and (max-width : 768px) {
-    #home {
-        padding: 125px 0 0 0 !important;
-    }
     
     /* NAVBAR */
-    #logo img {
-        width: 100px;
-        opacity: 1;
-    }
     #navbar {
         position: fixed !important;
     }
@@ -726,6 +723,7 @@ p#copy {
     .terms {
         justify-content: center;
     }
+    
 }
 
 /* SMALL */
@@ -735,6 +733,12 @@ p#copy {
         padding: 75px 0 50px 0;
     }
     /* HOME */
+    .big-text {
+        font-size: 90px !important;
+    }
+    #home {
+        padding: 50px 0 !important;
+    }
     #home-bg {
         display: none;
     }
