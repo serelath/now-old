@@ -54,14 +54,12 @@ p {
     font-weight: 300 !important;
     line-height: 1.7;
 }
-#big-text {
-    position: absolute;
-    bottom: 0;
+#big-text h1, #big-text h2 {
+    color: white !important;
 }
 .big-text {
     font-size: 150px !important;
-    letter-spacing: -5px !important;
-    line-height: 0.85;
+    line-height: 0.9;
 }
 .ls-short {
     letter-spacing: 0.5px !important;
@@ -193,15 +191,12 @@ section {
 /* HOME */
 /*=======================*/
 #home {
-    padding: 250px 0 0 0;
-    height: 100vh;
     overflow-y: hidden;
     background-color: #f6f5f4;
+    padding: 50px 0;
 }
-#home-bg {
+#landing {
     background: center / cover url("../images/home-bg.jpg");
-    height: 60vh;
-    position: relative;
 }
 #home-bg div:first-child {
     background: center / cover url("../images/home-paint-one.png");
