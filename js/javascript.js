@@ -27,7 +27,15 @@ $(document).ready(function(){
     $(".nav .nav-link").on("click", function(){
    $(".nav").find(".active").removeClass("active");
    $(this).addClass("active");
-});
+    });
+    
+    //side-nav
+    $('.fa-bars').click(function(){
+        $(this).siblings('.navbar-nav').addClass('nav-open').removeClass('close-nav');
+   });
+    $('.fa-times').click(function(){
+        $(this).closest('.navbar-nav').addClass('nav-close').removeClass('nav-open');          
+   });
 
 }); //document end
 

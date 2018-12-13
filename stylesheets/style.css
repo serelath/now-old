@@ -171,7 +171,6 @@ nav {
 }
 #navbar li a:hover {
     text-decoration: none;
-    color: #434348 !important;
 }
 .underline {
     position: absolute;
@@ -573,6 +572,9 @@ button#subscribe:hover h3 {
     background-color: #77939f;
     border: 1px solid #77939f;
 }
+.fa-times, .fa-bars {
+    display: none !important;
+}
 .footer-links a {
     color: #77939f !important;
 }
@@ -616,7 +618,75 @@ p#copy {
 
 /* LARGE */
 /*=======================*/
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
+    
+    /*NAVBAR*/
+    .nav-close {
+        transform: translateX(100%) !important;
+    }
+    .nav-open {
+        transform: translateX(0) !important;
+    }
+    #social {
+        position: relative !important;
+        left: 50%;
+        top: 125px;
+    }
+    .navbar {
+        height: 50px;
+    }
+    .navbar-nav {
+        display: block !important;
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        background-color: #222222;
+        padding: 25px !important;
+        text-align: center;
+        transition: 0.5s ease-out;
+        width: 225px;
+        transform: translateX(100%);
+    }
+    .navbar-nav li {
+        position: relative;
+        top: 50px;
+    }
+    .navbar-nav li a {
+        color: #ece9e5 !important;
+        transition: 0.3s;
+        padding: 10px;
+    }
+    #navbar li a {
+        color: #ece9e5 !!important;
+    }
+    #navbar li a:hover {
+        color: white !important;
+    }
+    .underline {
+        display: none;
+    }
+    .fa-times, .fa-bars {
+        display: block!important;
+        border: none;
+        cursor: pointer;
+    }
+    .fa-times {
+        color: #ece9e5 !important;
+    }
+    .fa-bars {
+        color: #434348 !important;
+        position: absolute;
+        right: 0;
+        top: 4px;
+    }
+    .fa-bars:hover {
+        color: #77939f !important;
+    }
+    .fa-times:hover, .fa-bars:hover {
+        border: none;
+        background-color: transparent;
+    }
 }
 
 /* MEDIUM */
@@ -627,9 +697,6 @@ p#copy {
     }
     
     /* NAVBAR */
-    .navbar {
-        height: 50px;
-    }
     #logo img {
         width: 100px;
         opacity: 1;
@@ -662,8 +729,8 @@ p#copy {
     }
 /*    FOOTER*/
     .terms {
-    justify-content: center;
-}
+        justify-content: center;
+    }
 }
 
 /* SMALL */
