@@ -197,26 +197,6 @@ section {
     padding: 50px 0;
     height: 100vh;
 }
-#landing button {
-    height: 50px;
-    width: 200px;
-    position: relative;
-    top: 50px;
-    background-color: #77939f;
-    z-index: -1;
-    border: none;
-    cursor: pointer;
-    color: white;
-    transition: 0.5s;
-}
-#landing button a {
-    text-decoration: none;
-}
-#landing button:hover {
-    text-decoration: none;
-    background-color: #f3f1ef;
-    color: #77939f !important;
-}
 .edible {
     display: none;
 }
@@ -598,6 +578,7 @@ p#copy {
     .shop-listing img {
         width: calc(85px + 6.5vw);
         height: calc(85px + 6.5vw);
+        background-color: blue;
         margin: 15px;
         transition: 0.5s;
     }
@@ -709,11 +690,7 @@ p#copy {
 /* MEDIUM */
 /*=======================*/
 @media only screen and (max-width : 768px) {
-
-    /*HOME*/
-    .home-banner {
-        margin: auto;
-    }
+    
     /* NAVBAR */
     #navbar {
         position: fixed !important;
@@ -771,10 +748,6 @@ p#copy {
         width: 40vw;
         height: 40vw;
         margin: 2.5vw;
-    }
-    #landing button {
-        width: 150px;
-        top: 40px;
     }
     
     /* CONTACT */
