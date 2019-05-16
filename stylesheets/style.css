@@ -49,7 +49,8 @@ h4 {
     }
 p {
     color: #434348 !important;
-    font-size: 20px !important;
+    letter-spacing: 0.25px;
+    font-size: 18px !important;
     font-weight: 300 !important;
     line-height: 1.7;
 }
@@ -60,13 +61,12 @@ p {
     transform: translate(-50%, -50%);
 }
 #big-text h1, #big-text h2 {
-    color: #434348 !important;
+    color: #f6f5f4 !important;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 .big-text {
     font-size: 140px !important;
     line-height: 0.9;
-    font-weight: 100 !important;
 }
 .ls-short {
     letter-spacing: 0.5px !important;
@@ -194,8 +194,29 @@ section {
     padding: 50px 0;
 }
 #landing {
+    background: center / cover url("../images/home-bg.jpg");
     padding: 50px 0;
     height: 100vh;
+}
+#landing button {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    top: 50px;
+    background-color: #77939f;
+    z-index: -1;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+}
+#landing button a {
+    text-decoration: none;
+}
+#landing button:hover {
+    text-decoration: none;
+    background-color: #f3f1ef;
+    color: #77939f !important;
 }
 .edible {
     display: none;
@@ -383,7 +404,7 @@ video {
         background: #77939f;
     }
 .mission-img-wrap {
-    background-color: #77939f;
+    background-color: #f3f1ef;
 }
 .mission-img {
     height: 200px;
@@ -530,16 +551,19 @@ button#subscribe:hover h3 {
 }
 .fa {
     padding: 6px;
-    width: 25px;
-    height: 25px;
+    width: 29px;
+    height: 29px;
     text-align: center;
     border-radius: 50%;
+    border: 1px solid #77939f;
     color: #77939f !important;
     text-decoration: none !important;
     transition: 0.3s;
 }
 .fa:hover {
-    color: #434348 !important;
+    color: white !important;
+    background-color: #77939f;
+    border: 1px solid #77939f;
 }
 .fa-times, .fa-bars {
     display: none !important;
@@ -578,7 +602,6 @@ p#copy {
     .shop-listing img {
         width: calc(85px + 6.5vw);
         height: calc(85px + 6.5vw);
-        background-color: blue;
         margin: 15px;
         transition: 0.5s;
     }
@@ -608,9 +631,6 @@ p#copy {
     }
     .navbar {
         height: 50px;
-    }
-    .navbar-brand{
-        color: #434348 !important;
     }
     .navbar-nav {
         display: block !important;
@@ -690,7 +710,11 @@ p#copy {
 /* MEDIUM */
 /*=======================*/
 @media only screen and (max-width : 768px) {
-    
+
+    /*HOME*/
+    .home-banner {
+        margin: auto;
+    }
     /* NAVBAR */
     #navbar {
         position: fixed !important;
@@ -748,6 +772,10 @@ p#copy {
         width: 40vw;
         height: 40vw;
         margin: 2.5vw;
+    }
+    #landing button {
+        width: 150px;
+        top: 40px;
     }
     
     /* CONTACT */
