@@ -49,8 +49,7 @@ h4 {
     }
 p {
     color: #434348 !important;
-    letter-spacing: 0.25px;
-    font-size: 18px !important;
+    font-size: 20px !important;
     font-weight: 300 !important;
     line-height: 1.7;
 }
@@ -61,12 +60,13 @@ p {
     transform: translate(-50%, -50%);
 }
 #big-text h1, #big-text h2 {
-    color: #f6f5f4 !important;
+    color: #434348 !important;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 .big-text {
     font-size: 140px !important;
     line-height: 0.9;
+    font-weight: 100 !important;
 }
 .ls-short {
     letter-spacing: 0.5px !important;
@@ -194,7 +194,6 @@ section {
     padding: 50px 0;
 }
 #landing {
-    background: center / cover url("../images/home-bg.jpg");
     padding: 50px 0;
     height: 100vh;
 }
@@ -404,7 +403,7 @@ video {
         background: #77939f;
     }
 .mission-img-wrap {
-    background-color: #f3f1ef;
+    background-color: #77939f;
 }
 .mission-img {
     height: 200px;
@@ -551,19 +550,16 @@ button#subscribe:hover h3 {
 }
 .fa {
     padding: 6px;
-    width: 29px;
-    height: 29px;
+    width: 25px;
+    height: 25px;
     text-align: center;
     border-radius: 50%;
-    border: 1px solid #77939f;
     color: #77939f !important;
     text-decoration: none !important;
     transition: 0.3s;
 }
 .fa:hover {
-    color: white !important;
-    background-color: #77939f;
-    border: 1px solid #77939f;
+    color: #434348 !important;
 }
 .fa-times, .fa-bars {
     display: none !important;
@@ -631,6 +627,9 @@ p#copy {
     }
     .navbar {
         height: 50px;
+    }
+    .navbar-brand{
+        color: #434348 !important;
     }
     .navbar-nav {
         display: block !important;
